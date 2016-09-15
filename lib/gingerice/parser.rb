@@ -26,6 +26,7 @@ module Gingerice
 
     def parse(text)
       @text = text
+      p "&&&&&&&&&&&&&&&&&&&&&&&& parse text #{@text}"
       perform_request
       process_response
     end
@@ -64,7 +65,7 @@ module Gingerice
     def process_response
       begin
         json_data = JSON.parse(raw_response)
-
+p "############returned json_data #{json_data}"
         i = 0
 
         json_data.fetch('LightGingerTheTextResult', []).each do |data|
