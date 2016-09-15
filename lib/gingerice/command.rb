@@ -16,6 +16,7 @@ module Gingerice
     end
 
     def execute
+      p "execute"
       if options.has_key?(:show)
 
         case options[:show]
@@ -28,6 +29,7 @@ module Gingerice
       else
         parser_opts = options.select { |k, _| Parser.default_options.keys.include?(k) }
         parser      = Parser.new(parser_opts)
+        p "args.last #{args.last}"
         response    = parser.parse(args.last)
 
         if options[:verbose]
