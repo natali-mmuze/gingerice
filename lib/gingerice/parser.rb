@@ -26,6 +26,7 @@ module Gingerice
 
     def parse(text)
       @text = text
+      @text = "blaaaaa"
       p "&&&&&&&&&&&&&&&&&&&&&&&& parse text #{@text}"
       perform_request
       process_response
