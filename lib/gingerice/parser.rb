@@ -15,6 +15,7 @@ module Gingerice
     attr_reader   :text, :raw_response, :result
 
     def initialize(options = {})
+      p "init !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
       merge_options(options).each do |key, value|
         send("#{key}=", value)
       end
