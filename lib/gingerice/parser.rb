@@ -81,7 +81,7 @@ module Gingerice
 
         {
           'text'        => text,
-          'result'      => result,
+          'result'      => resultp,
           'corrections' => @corrections
         }
       rescue Exception => _
