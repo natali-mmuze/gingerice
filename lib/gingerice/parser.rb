@@ -90,6 +90,7 @@ module Gingerice
     end
 
     def process_suggestions(i, data)
+       p "process_suggestions #{data}"
       from = data['From']
       to   = data['To']
 
